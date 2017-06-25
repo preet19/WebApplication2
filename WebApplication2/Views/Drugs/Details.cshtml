@@ -1,0 +1,26 @@
+﻿@model WebApplication2.Models.Drugs
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Drugs</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.drugName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.drugName)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.DrugsID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
